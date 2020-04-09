@@ -19,11 +19,14 @@ body{
   line-height: 1.6;
 }
 header{
+  position:fixed;
+  top: 0px;
   background: #ddd;
   padding:1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content:space-between;
+    z-index: 1;
 }
 nav#nav-bar ul{
   display: flex;
@@ -31,20 +34,29 @@ nav#nav-bar ul{
 
 }
 nav#nav-bar li{
-margin-left: 2rem;
+margin-left:7rem;
 
 
 
 }
 nav#nav-bar li a{
-color: #111;
+
+  display: flex;
+  color: black;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 0px 50px;
+  margin:2px;
+
+  font-size: 17px;
 
 
 
 }
 #header-img{
   width: 15rem;
-  margin: -1rem;
+  margin: -4rem;
+  position:fixed;
 }
 @media screen and (max-width:650px)
  {
@@ -56,13 +68,14 @@ color: #111;
     text-align: center;
   }
   #header-img{
-    margin: 1rem 0;
+    margin-left:2rem auto;
     text-align: center;
   }
 }
 .subscribe{
+  margin-top:12rem;
   text-align: center;
-  margin: 2rem auto;
+/*   margin: 2rem auto; */
 }
 .subscribe input{
   display: block;
@@ -110,6 +123,9 @@ opacity: 0.8;
   .featured-text{
     margin: 0;
     text-align: center;
+  }
+  .subscribe{
+    margin-top:12rem;
   }
 
 }
